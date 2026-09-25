@@ -9,7 +9,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 right-0 left-0 z-50 bg-white h-[68px] md:h-[53px]">
+    <header className="fixed top-0 right-0 left-0 z-50 bg-white h-[68px] md:h-[54px]">
       <div className="mx-auto flex max-w-[1262px] items-center justify-between px-4 lg:px-6 h-full">
         {/* Logo */}
         <Link href="/">

@@ -26,7 +26,7 @@ const partners = [
 export default function Partners() {
   return (
     <section className="relative py-[80px] bg-[url('/images/about/partner_bg.png')] bg-center bg-cover bg-no-repeat">
-      <div className="max-w-[722px] mx-auto px-[16px] md:px-[64px]">
+      <div className="max-w-[800px] mx-auto px-[16px] md:px-[64px]">
         <div className="flex items-center flex-col">
           <p className="text-[12px] mb-[8px] leading-[1.4] text-[#374151] font-normal">
             <span className=" bg-[linear-gradient(90deg,#9c33ff,#682eeb)] bg-clip-text text-transparent">

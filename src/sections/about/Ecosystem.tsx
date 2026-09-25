@@ -61,7 +61,7 @@ export default function Ecosystem() {
   return (
     <section className="relative py-[60px] bg-white">
       <div className="max-w-[1080px] mx-auto px-[16px] md:px-[64px]">
-        <div className="flex justify-center flex-col gap-0 items-center mb-[48px]">
+        <div className="flex justify-center flex-col gap-0 items-center mb-[20px]">
           <p className="text-[12px] mb-[8px] leading-[1.4] text-[#374151] font-normal">
             <span className=" bg-[linear-gradient(90deg,#9c33ff,#682eeb)] bg-clip-text text-transparent">
               07/
