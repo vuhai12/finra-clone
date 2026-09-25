@@ -66,7 +66,7 @@ export default function BusinessPhilosophy() {
           {philosophyCards.map((card) => (
             <div
               key={card.number}
-              className="flex flex-1 rounded-[12px] p-[24px] flex-col gap-[20px] bg-white border border-[#f6ebff] relative"
+              className="flex flex-1 rounded-[12px] p-[24px] flex-col gap-[20px] bg-white border border-[#f6ebff] relative hover:-translate-y-[8px] transition-all duration-300 ease-out hover:shadow-[0_16px_30px_rgba(90,67,185,0.25)]"
             >
               <div className="flex justify-between">
                 <div className="p-[8px] rounded-full w-[81px] h-[81px] border border-[#ead0fe]">
@@ -102,15 +102,7 @@ export default function BusinessPhilosophy() {
                 alt=""
                 width={500}
                 height={200}
-                className="
-      pointer-events-none
-      absolute
-      right-0
-      bottom-0
-      z-0
-      h-auto
-      w-full
-    "
+                className="pointer-events-none absolute right-0 bottom-0 z-0 h-auto w-full"
               />
               <div className={`w-[8px] h-[8px] rounded-full ${card.dotBg}`} />
             </div>

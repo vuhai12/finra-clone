@@ -79,7 +79,7 @@ export default function Leadership() {
           {leaders.map((leader) => (
             <div
               key={leader.name}
-              className="flex-1 flex flex-col rounded-[16px] overflow-hidden group relative bg-transparent cursor-pointer transition duration-300 ease-in-out"
+              className="flex-1 flex flex-col rounded-[16px] overflow-hidden group relative bg-transparent cursor-pointer transition-all duration-300 ease-out hover:-translate-y-[8px] hover:shadow-[0_16px_30px_rgba(90,67,185,0.25)]"
             >
               <div className="h-[260px] flex items-end justify-center  bg-[linear-gradient(0deg,#5a43b94d,#5a43b999)] backdrop-blur-[50px]">
                 <Image
@@ -108,7 +108,27 @@ export default function Leadership() {
               <button
                 type="button"
                 onClick={() => setSelectedLeader(leader)}
-                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white px-[16px] py-[8px] text-[14px] text-[#6a00ff] font-medium opacity-0 transition-all duration-300 group-hover:opacity-100"
+                className="
+    absolute
+    left-1/2
+    bottom-[150px]
+    -translate-x-1/2
+    translate-y-[100px]
+    rounded-full
+    bg-white
+    px-[16px]
+    py-[8px]
+    text-[14px]
+    text-[#6a00ff]
+    font-medium
+    opacity-0
+    transition-all
+    duration-300
+    ease-out
+    group-hover:translate-y-0
+    group-hover:opacity-100
+    whitespace-nowrap
+  "
               >
                 Xem thêm thông tin
               </button>

@@ -28,7 +28,7 @@ export default function VisionMission() {
         height={800}
         className="absolute top-0 right-0 z-0 h-full w-auto pointer-events-none select-none object-cover"
       />
-      <div className="max-w-[1134px] md:mx-auto mx-[16px] relative">
+      <div className="max-w-[1134px] md:mx-auto mx-[16px] relative px-[10px]">
         <p className="text-[12px] mb-[8px] ">
           <span className=" bg-[linear-gradient(90deg,#9c33ff,#682eeb)] bg-clip-text text-transparent">
             02 /
@@ -100,7 +100,6 @@ export default function VisionMission() {
                     height={10}
                     className="mt-[2px] shrink-0"
                   />
-
                   <p className="text-[14px] leading-[1.4] text-[#4b5563]">
                     <strong className="font-semibold text-black">
                       {mission.title}

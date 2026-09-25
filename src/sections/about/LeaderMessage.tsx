@@ -2,8 +2,9 @@ import Image from "next/image";
 
 export default function LeaderMessage() {
   return (
-    <section className="flex bg-[#efebe7] relative flex-col-reverse md:flex-row">
-      <div className="w-full md:w-1/2">
+    <section className="flex md:bg-[#efebe7] bg-transparent relative flex-col-reverse md:flex-row">
+      <div className="w-full md:w-1/2  relative sm:static">
+        <div className="absolute left-1/2 top-[-50px] z-10 h-[80px] w-[120%] -translate-x-1/2 bg-[#f4f1f2] blur-[12px] md:bg-[#fefdfd] md:blur-[20px] lg:hidden" />
         {/* Mobile */}
         <Image
           src="/images/about/CEO_banner_mb.webp"
@@ -19,38 +20,13 @@ export default function LeaderMessage() {
           alt="CEO Finra"
           width={1163}
           height={606}
-          className="
-      hidden
-      w-full
-      object-cover
-      md:absolute
-      md:top-0
-      md:left-0
-      md:block
-      md:h-full
-      md:w-auto
-    "
+          className="hidden w-full object-cover md:absolute md:top-0 md:left-0 md:block md:h-full md:w-auto"
         />
-        {/* <Image
-          src="/images/about/CEO_banner.webp"
-          alt="CEO Finra"
-          width={1163}
-          height={606}
-          className="
-      w-full
-      object-cover
-      md:absolute
-      md:top-0
-      md:left-0
-      md:h-full
-      md:w-auto
-    "
-        /> */}
       </div>
 
       <div className="md:w-1/2 z-10 px-[16px] py-[32px] md:pt-[40px] md:px-[64px] md:pb-[80px] w-full">
         <p className="text-[#6b7280] text-[12px] font-normal">
-          <span className=" bg-[linear-gradient(90deg,#9c33ff,#682eeb)] bg-clip-text text-transparent">
+          <span className="bg-[linear-gradient(90deg,#9c33ff,#682eeb)] bg-clip-text text-transparent">
             01 /
           </span>{" "}
           THÔNG ĐIỆP TỪ NGƯỜI DẪN LỐI
@@ -61,7 +37,7 @@ export default function LeaderMessage() {
           width={40}
           height={40}
         />
-        <div className="text-[#4b5563] text-[14px] font-normal leading-[30px]">
+        <div className="text-[#4b5563] text-[14px] font-normal leading-[1.4] mt-[24px]">
           <p className="mb-[12px]">
             Khi thị trường không ngừng thay đổi, niềm tin của khách hàng luôn là
             nền tảng cho sự phát triển của Finra. Chúng tôi theo đuổi sứ mệnh{" "}

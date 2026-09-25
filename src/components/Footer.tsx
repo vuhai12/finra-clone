@@ -62,7 +62,7 @@ export default function Footer() {
       {/* Content */}
       <div className="mx-auto max-w-[1182px] flex flex-col gap-[40px] px-[16px]">
         <div className="flex gap-[40px] flex-col md:flex-row">
-          <div className="flex flex-col gap-[16px] mr-[60px]">
+          <div className="flex flex-col gap-[16px] md:mr-[60px]">
             <Link href="/">
               <Image
                 src="/images/common/logo-mobile.png"

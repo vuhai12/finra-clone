@@ -60,7 +60,7 @@ const ecosystem = [
 export default function Ecosystem() {
   return (
     <section className="relative py-[60px] bg-white">
-      <div className="max-w-[1080] mx-auto px-[64px]">
+      <div className="max-w-[1080px] mx-auto px-[16px] md:px-[64px]">
         <div className="flex justify-center flex-col gap-0 items-center mb-[48px]">
           <p className="text-[12px] mb-[8px] leading-[1.4] text-[#374151] font-normal">
             <span className=" bg-[linear-gradient(90deg,#9c33ff,#682eeb)] bg-clip-text text-transparent">
@@ -68,7 +68,7 @@ export default function Ecosystem() {
             </span>{" "}
             SỨC MẠNH TỪ SỰ KẾT NỐI
           </p>
-          <h2 className="md:text-[32px] text-[24px] text-center leading-[1.125] font-medium text-[#111827] mb-[40px]">
+          <h2 className="md:text-[32px] text-[24px] text-center leading-[1.125] font-medium text-[#111827] md:mb-[40px]">
             Hệ sinh thái
             <span className="bg-[linear-gradient(270deg,#8a04ff,#1441ff)] bg-clip-text text-transparent">
               {" "}
@@ -78,7 +78,10 @@ export default function Ecosystem() {
         </div>
         <div className="flex flex-col gap-[40px]">
           {ecosystem.map((row) => (
-            <div key={row.label} className="flex md:flex-row flex-col ">
+            <div
+              key={row.label}
+              className="flex md:flex-row flex-col gap-[16px] items-center "
+            >
               {/* Label */}
               <div className="flex gap-[4px] items-center">
                 <Image src={row.icon} alt={row.label} width={16} height={16} />
@@ -86,11 +89,11 @@ export default function Ecosystem() {
               </div>
 
               {/* Logos */}
-              <div className="flex justify-center gap-[20px] items-center flex-1">
+              <div className="flex flex-wrap justify-center gap-[20px] items-center flex-1">
                 {row.items.map((item) => (
                   <div
                     key={item.alt}
-                    className="rounded-[16px] w-[180px] p-[16px] border border-[#e5e7eb] bg-[linear-gradient(180deg,#fff,#fff)]"
+                    className="md:rounded-[16px] rounded-[10px] w-[110px] md:w-[180px] p-[6px] md:p-[16px] border border-[#e5e7eb] bg-white transition-all duration-300 ease-out hover:-translate-y-[5px]"
                   >
                     <Image
                       src={item.image}

@@ -18,7 +18,7 @@ export default function Header() {
             alt="FINRA"
             width={110}
             height={40}
-            className="h-auto w-[110px]"
+            className="h-auto w-[60px]"
             priority
           />
         </Link>
