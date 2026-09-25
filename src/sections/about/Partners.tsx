@@ -43,7 +43,7 @@ export default function Partners() {
         </div>
         <div className="flex gap-[24px] flex-wrap ">
           {partners.map((partner) => (
-            <div className="flex w-[calc(50%-24px)]">
+            <div className="flex w-[calc(50%-24px)]" key={partner.alt}>
               <div
                 key={partner.alt}
                 className="p-[16px] flex items-center justify-center rounded-[24px] w-[206px] h-[100px] relative flex-col  gap-0 border-2 border-[hsla(0,0%,100%,0)] bg-[linear-gradient(180deg,#fff,#f1ebfc)] shadow-[0_6px_8px_#a098fb26,inset_0_4px_8px_6px_#fff6] transition-all duration-300 ease-in-out"

@@ -63,8 +63,11 @@ export default function BusinessPhilosophy() {
           </span>
         </h2>
         <div className="flex gap-[12px] md:flex-row flex-col">
-          {philosophyCards.map((card, index) => (
-            <div className="flex flex-1 rounded-[12px] p-[24px] flex-col gap-[20px] bg-white border border-[#f6ebff] relative">
+          {philosophyCards.map((card) => (
+            <div
+              key={card.number}
+              className="flex flex-1 rounded-[12px] p-[24px] flex-col gap-[20px] bg-white border border-[#f6ebff] relative"
+            >
               <div className="flex justify-between">
                 <div className="p-[8px] rounded-full w-[81px] h-[81px] border border-[#ead0fe]">
                   <div

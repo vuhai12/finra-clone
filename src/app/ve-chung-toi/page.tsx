@@ -1,5 +1,3 @@
-import LeaderModal from "@/components/LeaderModal";
-import MobileMenu from "@/components/MobileMenu";
 import AboutHero from "@/sections/about/AboutHero";
 import BusinessPhilosophy from "@/sections/about/BusinessPhilosophy";
 import CoreValues from "@/sections/about/CoreValues";
@@ -23,8 +21,6 @@ export default function AboutPage() {
         <Leadership />
         <Ecosystem />
         <Partners />
-        {/* <LeaderModal /> */}
-        {/* <MobileMenu /> */}
       </main>
     </>
   );
