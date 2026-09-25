@@ -47,7 +47,7 @@ const values = [
 
 export default function CoreValues() {
   return (
-    <section className="relative min-h-[458px] md:p-[64px] py-[20px]">
+    <section className="relative min-h-[458px] md:p-[64px] py-[50px]">
       <Image
         src="/images/about/core_value_banner.webp"
         alt="Core Values Banner"
@@ -58,7 +58,7 @@ export default function CoreValues() {
 
       <div className="md:px-[80px] mx-auto max-w-[1134px] relative px-[16px]">
         <div className="md:absolute bottom-0 left-0 z-10 text-white relative">
-          <div className="text-[14px] mb-[8px] leading-[1.4] font-normal">
+          <div className="text-[14px] mb-[10px] leading-[1.4] font-normal">
             03/ NỀN TẢNG PHÁT TRIỂN
           </div>
 
@@ -66,7 +66,7 @@ export default function CoreValues() {
             Giá trị cốt lõi
           </h2>
         </div>
-        <div className="flex flex-col items-center w-full mt-[20px] md:mt-0 gap-[30px] md:gap-0">
+        <div className="flex flex-col items-center w-full mt-[30px] md:mt-0 gap-[30px] md:gap-0">
           {values.map((value, index) => (
             <div
               key={value.title}
@@ -94,7 +94,7 @@ export default function CoreValues() {
 
               <div
                 className={`relative md:h-[132px] md:w-[230px] w-full rounded-[12px] ${
-                  index > 0 ? "-mt-[20px]" : ""
+                  index > 0 ? "md:-mt-[20px]" : ""
                 }`}
               >
                 {/* <Image
