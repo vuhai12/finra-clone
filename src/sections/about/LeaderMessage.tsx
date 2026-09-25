@@ -4,7 +4,7 @@ export default function LeaderMessage() {
   return (
     <section className="flex md:bg-[#efebe7] bg-transparent relative flex-col-reverse md:flex-row">
       <div className="w-full md:w-1/2  relative sm:static">
-        <div className="absolute left-1/2 top-[-50px] z-10 h-[80px] w-[120%] -translate-x-1/2 bg-[#f4f1f2] blur-[12px] md:bg-[#fefdfd] md:blur-[20px] lg:hidden" />
+        <div className="absolute left-1/2 top-[-50px] z-10 h-[80px] w-[100%] -translate-x-1/2 bg-[#f4f1f2] blur-[12px] md:bg-[#fefdfd] md:blur-[20px] lg:hidden" />
         {/* Mobile */}
         <Image
           src="/images/about/CEO_banner_mb.webp"
