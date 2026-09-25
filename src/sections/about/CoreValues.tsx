@@ -14,7 +14,7 @@ const values = [
     iconBg:
       "w-[36px] h-[36px] bg-[linear-gradient(270deg,#8a04ff,#1441ff)] rounded-full flex items-center justify-center relative ",
     position:
-      "md:-translate-x-[200px] min-[768px]:-translate-x-[100px] z-[1] md:max-w-[542px] w-full",
+      "md:-translate-x-[200px] min-[768px]:max-[820px]:-translate-x-[100px] z-[1] md:max-w-[542px] w-full",
   },
   {
     title: "BẢO TOÀN",
@@ -43,7 +43,7 @@ const values = [
     iconBg:
       "w-[36px] h-[36px] bg-[linear-gradient(270deg,#8a04ff,#1441ff)] rounded-full flex items-center justify-center relative ",
     position:
-      "md:translate-x-[200px] min-[768px]:translate-x-[100px] min z-[3] md:max-w-[542px] w-full",
+      "md:translate-x-[200px] min-[768px]:max-[820px]:translate-x-[100px] min z-[3] md:max-w-[542px] w-full",
   },
 ];
 
