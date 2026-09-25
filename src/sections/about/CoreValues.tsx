@@ -13,7 +13,8 @@ const values = [
     image: "/images/about/core_value_1.webp",
     iconBg:
       "w-[36px] h-[36px] bg-[linear-gradient(270deg,#8a04ff,#1441ff)] rounded-full flex items-center justify-center relative ",
-    position: "md:-translate-x-[200px] z-[1] md:max-w-[542px] w-full",
+    position:
+      "md:-translate-x-[200px] min-[768px]:-translate-x-[100px] z-[1] md:max-w-[542px] w-full",
   },
   {
     title: "BẢO TOÀN",
@@ -41,7 +42,8 @@ const values = [
     image: "/images/about/core_value_3.webp",
     iconBg:
       "w-[36px] h-[36px] bg-[linear-gradient(270deg,#8a04ff,#1441ff)] rounded-full flex items-center justify-center relative ",
-    position: "md:translate-x-[200px] z-[3] md:max-w-[542px] w-full",
+    position:
+      "md:translate-x-[200px] min-[768px]:translate-x-[100px] min z-[3] md:max-w-[542px] w-full",
   },
 ];
 
@@ -57,12 +59,12 @@ export default function CoreValues() {
       />
 
       <div className="md:px-[80px] mx-auto max-w-[1134px] relative px-[16px]">
-        <div className="md:absolute bottom-0 left-0 z-10 text-white relative">
+        <div className="md:absolute min-[768px]:max-[820px]:bottom-[-30px] min-[768px]:max-[820px]:left-[-30px] bottom-0 left-0 z-10 text-white relative">
           <div className="text-[14px] mb-[10px] leading-[1.4] font-normal">
             03/ NỀN TẢNG PHÁT TRIỂN
           </div>
 
-          <h2 className="md:text-[40px] text-[24px] font-medium leading-[1.125]">
+          <h2 className="md:text-[38px] text-[24px] font-medium leading-[1.125]">
             Giá trị cốt lõi
           </h2>
         </div>
