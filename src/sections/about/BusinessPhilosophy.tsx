@@ -62,11 +62,11 @@ export default function BusinessPhilosophy() {
             của Finra
           </span>
         </h2>
-        <div className="flex gap-[12px] md:flex-row flex-col">
+        <div className="flex gap-[12px] overflow-x-auto pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:flex-row md:overflow-visible">
           {philosophyCards.map((card) => (
             <div
               key={card.number}
-              className="flex flex-1 rounded-[12px] p-[24px] flex-col gap-[20px] bg-white border border-[#f6ebff] relative hover:-translate-y-[8px] transition-all duration-300 ease-out hover:shadow-[0_16px_30px_rgba(90,67,185,0.25)]"
+              className="relative flex w-[300px] shrink-0 flex-col gap-[20px] rounded-[12px] border border-[#f6ebff] bg-white p-[24px] transition-all duration-300 ease-out hover:-translate-y-[8px] hover:shadow-[0_16px_30px_rgba(90,67,185,0.25)] md:w-auto md:flex-1 md:shrink"
             >
               <div className="flex justify-between">
                 <div className="p-[8px] rounded-full w-[81px] h-[81px] border border-[#ead0fe]">
