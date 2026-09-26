@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutHero() {
   return (
-    <section className="relative min-h-[540px] overflow-hidden">
+    <section className="relative min-h-[540px] overflow-hidden mt-[68px] md:mt-[54px]">
       {/* Background image */}
       <Image
         src="/images/about/hero_banner.webp"

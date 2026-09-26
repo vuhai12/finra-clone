@@ -2,16 +2,16 @@ import Image from "next/image";
 
 export default function LeaderMessage() {
   return (
-    <section className="flex md:bg-[#efebe7] bg-transparent relative flex-col-reverse md:flex-row">
-      <div className="w-full md:w-1/2  relative sm:static">
-        <div className="absolute left-1/2 top-[-50px] z-10 h-[80px] w-[100%] -translate-x-1/2 bg-[#f4f1f2] blur-[12px] md:bg-[#fefdfd] md:blur-[20px] lg:hidden" />
+    <section className="flex md:bg-[#efebe7] bg-transparent relative flex-col-reverse lg:flex-row">
+      <div className="w-full relative lg:static lg:w-1/2">
+        <div className="absolute left-1/2 top-[-50px] z-10 lg:hidden h-[80px] w-[100%] -translate-x-1/2 bg-[#f4f1f2] blur-[12px] lg:bg-[#fefdfd] lg:blur-[20px]" />
         {/* Mobile */}
         <Image
           src="/images/about/CEO_banner_mb.webp"
           alt="CEO Finra"
           width={800}
           height={600}
-          className="block w-full object-cover md:hidden"
+          className="block w-full object-cover lg:hidden"
         />
 
         {/* Desktop */}
@@ -20,11 +20,11 @@ export default function LeaderMessage() {
           alt="CEO Finra"
           width={1163}
           height={606}
-          className="hidden w-full object-cover md:absolute md:top-0 md:left-0 md:block md:h-full md:w-auto"
+          className="hidden w-full object-cover lg:absolute lg:inset-0 lg:block lg:h-full lg:w-auto"
         />
       </div>
 
-      <div className="md:w-1/2 z-10 px-[16px] py-[32px] md:pt-[40px] md:px-[64px] md:pb-[80px] w-full">
+      <div className="lg:w-1/2 z-10 px-[16px] py-[32px] lg:pt-[40px] lg:px-[64px] lg:pb-[80px] w-full">
         <p className="text-[#6b7280] text-[12px] font-normal">
           <span className="bg-[linear-gradient(90deg,#9c33ff,#682eeb)] bg-clip-text text-transparent">
             01 /
