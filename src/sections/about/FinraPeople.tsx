@@ -45,11 +45,11 @@ export default function FinraPeople() {
               quản trị tài chính nhạy bén và năng lực công nghệ đột phá”
             </h3>
           </div>
-          <div className="flex gap-[12px] flex-col md:flex-row">
+          <div className="flex gap-[12px] overflow-x-auto pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:overflow-visible">
             {coreValues.map((item) => (
               <div
                 key={item.title}
-                className="flex flex-1 flex-col gap-[32px] p-[12px] rounded-[18px] bg-[radial-gradient(197.75%_111.25%_at_23.68%_30.75%,#f6ebff_0,#fff0)]"
+                className="flex w-[280px] shrink-0 flex-col gap-[32px] p-[12px] rounded-[18px] bg-[radial-gradient(197.75%_111.25%_at_23.68%_30.75%,#f6ebff_0,#fff0)] md:w-auto md:flex-1 md:shrink"
               >
                 <div className="w-[38px] h-[38px] rounded-full bg-[linear-gradient(270deg,#8a04ff,#1441ff)] flex items-center justify-center relative">
                   <Image
