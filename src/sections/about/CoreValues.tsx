@@ -3,47 +3,25 @@ import Image from "next/image";
 const values = [
   {
     title: "MINH BẠCH",
-    desc: (
-      <>
-        Công khai thông tin, <br className="hidden md:block" />
-        rõ ràng trong hoạt động
-      </>
-    ),
+    desc: "Công khai thông tin, rõ ràng trong hoạt động",
     icon: "/images/about/security-check.svg",
     image: "/images/about/core_value_1.webp",
-    iconBg:
-      "w-[36px] h-[36px] bg-[linear-gradient(270deg,#8a04ff,#1441ff)] rounded-full flex items-center justify-center relative ",
-    position:
-      "md:-translate-x-[200px] min-[768px]:max-[820px]:-translate-x-[100px] z-[1] md:max-w-[542px] w-full",
+    position: "lg:-translate-x-[200px] md:-translate-x-[100px]",
   },
   {
     title: "BẢO TOÀN",
-    desc: (
-      <>
-        Quản lý nguồn vốn <br className="hidden md:block" />
-        an toàn, chặt chẽ
-      </>
-    ),
+    desc: "Quản lý nguồn vốn an toàn, chặt chẽ",
     icon: "/images/about/security-lock.svg",
     image: "/images/about/core_value_2.webp",
-    iconBg:
-      "w-[36px] h-[36px] bg-[linear-gradient(270deg,#8a04ff,#1441ff)] rounded-full flex items-center justify-center relative ",
-    position: "z-[2] md:max-w-[542px] w-full",
+    position: "lg:mt-[-30px] md:mt-[-50px]",
   },
   {
     title: "CHIA SẺ",
-    desc: (
-      <>
-        Tối ưu nguồn lực, gia tăng giá trị <br className="hidden md:block" />
-        cho cộng sự và nhà đầu tư
-      </>
-    ),
+    desc: "Tối ưu nguồn lực, gia tăng giá trị cho cộng sự và nhà đầu tư",
     icon: "/images/about/share-07.svg",
     image: "/images/about/core_value_3.webp",
-    iconBg:
-      "w-[36px] h-[36px] bg-[linear-gradient(270deg,#8a04ff,#1441ff)] rounded-full flex items-center justify-center relative ",
     position:
-      "md:translate-x-[200px] min-[768px]:max-[820px]:translate-x-[100px] min z-[3] md:max-w-[542px] w-full",
+      "lg:mt-[-30px] md:mt-[-50px] lg:translate-x-[200px] md:translate-x-[100px]",
   },
 ];
 
@@ -68,14 +46,14 @@ export default function CoreValues() {
             Giá trị cốt lõi
           </h2>
         </div>
-        <div className="flex flex-col items-center w-full mt-[30px] md:mt-0 gap-[30px] md:gap-0">
-          {values.map((value, index) => (
+        <div className="flex flex-col items-center w-full mt-[40px] md:mt-0 gap-[50px] md:gap-0">
+          {values.map((value) => (
             <div
               key={value.title}
-              className={`relative flex md:flex-row flex-col md:items-end md:justify-between gap-[32px] ${value.position}`}
+              className={`flex md:gap-[32px] gap-[20px] md:flex-row flex-col w-full lg:max-w-[700px] md:max-w-[480px] md:items-end ${value.position}`}
             >
-              <div className="flex gap-[12px]">
-                <div className={value.iconBg}>
+              <div className="flex gap-[12px] w-full md:max-w-[300px]">
+                <div className="w-[36px] h-[36px] shrink-0 bg-[linear-gradient(270deg,#8a04ff,#1441ff)] rounded-full flex items-center justify-center relative">
                   <Image
                     src={value.icon}
                     alt={value.title}
@@ -84,7 +62,7 @@ export default function CoreValues() {
                   />
                 </div>
 
-                <div className="flex flex-col gap-[8px]">
+                <div className="flex flex-col gap-[8px] md:max-w-[220px]">
                   <h4 className="text-[16px] font-semibold text-white leading-[1.25]">
                     {value.title}
                   </h4>
@@ -94,17 +72,7 @@ export default function CoreValues() {
                 </div>
               </div>
 
-              <div
-                className={`relative md:h-[132px] md:w-[230px] w-full rounded-[12px] ${
-                  index > 0 ? "md:-mt-[20px]" : ""
-                }`}
-              >
-                {/* <Image
-                  src={value.image}
-                  alt={value.title}
-                  fill
-                  className="object-contain"
-                /> */}
+              <div className={`relative md:h-[132px] rounded-[12px]`}>
                 <Image
                   src={value.image}
                   alt={value.title}
